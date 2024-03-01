@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Light mode styles */
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg-color: #f0f0f0;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    --bg-color: #363537;
+    --text-color: #FAFAFA;
+    --card-bg-color: #484848;
+}
+
+/* Applying custom properties */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.flight-card,
+.shimmer-effect {
+    background-color: var(--card-bg-color);
+}
